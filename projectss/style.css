@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(177, 254, 229);
+    font-family: sans-serif;
+}
+
+/*header*/
+
+header {
+    width: 100%;
+    background-color: rgb(255, 77, 113);
+    color: white;
+    overflow: hidden;
+}
+
+header span {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 100px;
+    display: block;
+    text-align: center;
+}
+
+/*form*/
+
+.form {
+    background-color: white;
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-box-shadow: 0px 0px 36px 8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 36px 8px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 36px 8px rgba(0, 0, 0, 0.75);
+}
+
+.boton {
+    background-color: rgb(255, 77, 113);
+    border: none;
+    color: white;
+    padding: 10px 150px;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 10px;
+    transition: 0.3s;
+    opacity: 0.7;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.boton:hover {
+    opacity: 1
+}
+.contact {
+    padding: 0.8rem;
+    overflow: hidden;
+    color: gray;
+}
+
+.contact label,
+.contact input,
+.contact textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.contact label {
+    font-weight: 600;
+}
+
+.contact input:not([type="submit"]),
+.contact textarea {
+    border: none;
+    border-bottom: 2px solid rgb(255, 77, 113);
+    margin-bottom: 10px;
+    font-size: 20px;
+    outline: none;
+    color: gray;
+}
+
+.contact textarea {
+    min-height: 100px;
+}
+
+.contact label {
+    color: rgb(89, 89, 89);
+}
