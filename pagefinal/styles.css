@@ -1,0 +1,255 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-purple: #9c1dce;
+    --main-blue: #45567d;
+    --main-gray: #363636;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: var(--main-white);
+    line-height: 1.4;
+    font-size: 18px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    background-color: var(--main-purple);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.76);
+    z-index: 10;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 20px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+.nav-list a {
+    font-size: 2.2rem;
+    padding: 20px;
+    width: 100%;
+    display: block;
+}
+.nav-list > li > a:hover {
+    background-color: var(--main-blue);
+}
+
+.welcome-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.welcome-section h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.welcome-section p {
+    font-size: 3rem;
+    color: var(--main-purple);
+}
+
+.projects-section {
+    background-color: var(--main-blue);
+    padding: 100px 20px;
+}
+
+.projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    text-align: center;
+    border-bottom: 2px solid var(--main-white);
+}
+
+h2 {
+    font-size: 42px;
+    font-family: "Raleway", sans-serif;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.project {
+    background: var(--main-gray);
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+    border-radius: 2px;
+}
+
+.project-title {
+    padding: 20px 5px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.code {
+    color: var(--main-gray);
+    transition: color 0.7s ease-out;
+}
+
+.project:hover .code {
+    color: #ff7f50;
+}
+
+.btn-show-all {
+    display: flex;
+    font-size: 2rem;
+    background: var(--main-gray);
+    transition: background 0.3s ease-out;
+}
+
+.btn.btn-show-all {
+    margin: 0 auto;
+    max-width: 145px;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-show-all > i {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+}
+
+.btn-show-all:hover {
+    background: var(--main-purple);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+}
+
+.contact-section {
+    background-color: var(--main-gray);
+    padding: 0 20px;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contact-section-header > h2 {
+    font-size: 60px;
+    flex-wrap: wrap;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    font-size: 24px;
+    flex-wrap: wrap;
+    max-width: 980px;
+}
+
+.contact-details {
+    text-shadow: 2px 2px 1px #1f1f1f;
+}
+
+footer {
+    display: flex;
+    background-color: var(--main-gray);
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    color: var(--main-white);
+    border-top: 4px solid var(--main-purple);
+}
+
+footer > p {
+    margin: 20px;
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media (max-width: 460px) {
+    .nav {
+        justify-content: center;
+    }
+
+    .nav-list > li > a {
+        padding: 17.6px;
+    }
+
+    .nav-list {
+        margin: 0 1rem;
+    }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 980px) {
+    html {
+        font-size: 58%;
+    }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 460px) {
+    html {
+        font-size: 55%;
+    }
+}
