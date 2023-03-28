@@ -7,12 +7,12 @@ const Buttons = (props) => {
   }
 
   return (
-    <div
+    <button
       className={`button-container ${isOperator(props.children) ? 'operator' : ''}`.trimEnd()}
       onClick={() => props.driveClick(props.children)}
     >
       {props.children}
-    </div>
+    </button>
   )
 }
 
